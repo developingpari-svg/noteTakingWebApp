@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= filename %></title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: #f4fff4; /* light white-green */
+            padding-bottom: 40px;
+        }
+
+        /* NAVBAR */
+        nav{
+            width: 100%;
+            background: #0b8f3b; /* green */
+            padding: 15px 20px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .container{
+            width: 80%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .container h1{
+            margin-bottom: 12px;
+            color: #0b8f3b;
+        }
+
+        .container p{
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+            white-space: pre-wrap; /* keeps text formatting */
+        }
+
+        a{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0b8f3b;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            background: #097a32;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>📄 Viewing File: <%= filename %></nav>
+
+    <div class="container">
+        <h1><%= filename %></h1>
+        <p><%= data %></p>
+
+        <a href="/">⬅ Go Home</a>
+
+    </div>
+
+</body>
+</html>
